@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Pessoa</title>
+</head>
+<body>
+  <h1>Cadastro de Pessoa</h1>
+  <form action="/cadastro" method="POST">
+    
+    <label for="email">Nome:</label><br>
+    <input type="text" id="usuario" name="usuario" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="telefone">Telefone:</label><br>
+    <input type="tel" id="telefone" name="telefone" required><br><br>
+    <button type="submit">Cadastrar</button>
+    
+  </form>
+  <hr>
+  
+  <form action="/lista">
+    <label for="nome">ver informacoes</label><br>
+    <button type="submit">visualizar</button>
+  </form>
+  <hr>
+  <form action="/listaAlter">
+    <label for="nome"> atualizar informacoes</label><br>
+    <button type="submit">atualizar</button>
+  </form>
+  <hr>
+  <form action="/listaDel">
+    <label for="nome"> deletar informacoes</label><br>
+    <button type="submit">deletar</button>
+  </form>
+
+
+</body>
+</html>
